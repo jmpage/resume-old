@@ -56,7 +56,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
 
-\setmathfont{XITS Math}
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -145,6 +145,22 @@
     #4\vspace{\parsep}%
   }\\}
 
+\newcommand{\entryoneline}[3]{%
+  #1&\parbox[t]{11.8cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+  }}
+\newcommand{\entryalt}[5]{%
+  \parbox[t]{14cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    \emph{#4}%
+    \hfill%
+    #1\\%
+    #5\vspace{\parsep}%
+  }\\}
 
 %%%%%%%%%%%%%%
 % Side block %

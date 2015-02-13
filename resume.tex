@@ -1,0 +1,89 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+
+\begin{document}
+\header{jennifer}{page}{software engineer}
+
+% In the aside, each new line forces a line break
+\begin{aside} % In the aside, each new line forces a line break
+  \section{contact}
+    119 Peterborough St.
+    Apartment \#25
+    Boston, MA 02215
+    ~
+    (978) 290-0361
+    ~
+    \hspace{-2ex}\href{mailto:jenipage1989@gmail.com}{jenipage1989@gmail.com}
+    \hspace{-5ex}\href{https://github.com/jmpage}{https://github.com/jmpage}
+  \section{programming languages}
+    Ruby, Java,
+    JavaScript, C,
+    C++ \& Python
+  \section{frameworks}
+    Ruby on Rails,
+    React JS, JQuery,
+    Kraken JS,
+    Opscode Chef
+    \& Cucumber
+  \section{operating systems}
+    Linux, OS X \& Windows
+  \section{misc. skills}
+    MySQL, PostgreSQL,
+    Test Driven Development,
+    Pivotal Tracker,
+    Rally, JIRA
+    \& Jenkins
+\end{aside}
+
+\section{experience}
+
+\begin{entrylist}
+  \entryalt
+    {June 2013--Present}
+    {PayPal}
+    {Boston, Massachusetts}
+    {Software Engineer II}
+    {Full stack engineer on a team which provides a Ruby on Rails based UI and API for managing offers and campaigns for PayPal Media Network, Bill Me Later and the PayPal Deals website. \\
+    Accomplishments:
+    \begin{itemize}
+      \item Rewrote part of our application to increase reliability of synchronization with external services.
+      \item Addressed security issues within our application and introduced the use of brakeman, a static code analysis tool, to our team's definition of done to help find potential issues before code review.
+      \item Mentored new team members and coops using TDD and pair programming.
+      \item Collaborated with stakeholders to ensure that our team took on features with the highest business value.
+      \item Took ownership of a project to move our team's application to an OpsCode Chef based infrastructure pipeline. Organized milestones and a timeline which broke down the project into small pieces to allow the team to work concurrently. Aided our sister team in moving their application to the same pipeline through training and helping plan the move.
+      \item Maintained a >99\% uptime for our application and increased test coverage to >95\% along with my team.
+      \item Set up and configured a Jenkins server for continuous integration, security audits, deployments and creating releases.
+      \item Presented a tech talk about Rabbit MQ and topic exchanges to help other teams understand how to bind their queues to our exchange to receive messages.
+      \item Served as the Vice Chair of the Boston chapter of eBay Women in Technology (eWIT)
+    \end{itemize}}
+  \entryalt
+    {2012}
+    {PayPal}
+    {Boston, Massachusetts}
+    {Summer Intern}
+    {Accomplishments:
+    \begin{itemize}
+      \item Wrote a Sinatra based Ruby application for visualizing ops data for the systems team.
+      \item Automated a report generation process that previously required a day to do manually.
+    \end{itemize}}
+\end{entrylist}
+
+\section{open source contributions}
+
+{\href{https://github.com/jmpage/capistrano_scm_nexus}{\textbf{capistrano\_scm\_nexus}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
+Published a gem which allows Capistrano to deploy a release by downloading an artifact from Sonatype Nexus instead of using SCM.\\
+{\href{https://github.com/newrelic/rpm}{\textbf{newrelic\_rpm}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
+Added Capistrano 3 support for deployment notification.\\
+{\href{https://github.com/thoughtbot/shoulda-matchers}{\textbf{shoulda-matchers}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
+Fixed a bug in the \verb|validates_numericality_of| matcher and added a \verb|validates_absence_of| matcher.
+
+\section{education}
+
+\begin{entrylist}
+  \entryoneline
+    {May 2013}
+    {Bachelor {\normalfont of Computer Science}}
+    {Worcester Polytechnic Institute}
+\end{entrylist}
+
+\end{document}
