@@ -2,7 +2,7 @@
 \documentclass[]{friggeri-cv}
 
 \begin{document}
-\header{jennifer}{page}{software engineer}
+\header{jennifer}{page}{software architect}
 
 % In the aside, each new line forces a line break
 \begin{aside} % In the aside, each new line forces a line break
@@ -16,30 +16,97 @@
     \hspace{-2ex}\href{mailto:jenipage1989@gmail.com}{jenipage1989@gmail.com}
     \hspace{-5ex}\href{https://github.com/jmpage}{https://github.com/jmpage}
   \section{programming languages}
-    Ruby, Java,
-    JavaScript, C,
-    C++ \& Python
+    Scala, Elixir, Ruby, Java, JavaScript, C, \& C++
   \section{frameworks}
-    Ruby on Rails,
-    React JS, JQuery,
-    Kraken JS,
-    Opscode Chef
-    \& Cucumber
-  \section{operating systems}
-    Linux, OS X \& Windows
-  \section{misc. skills}
-    MySQL, PostgreSQL,
-    Test Driven Development,
-    Pivotal Tracker,
-    Rally, JIRA
-    \& Jenkins
+    Scalaz, Cats, Shapeless, Ruby on Rails, \& Opscode Chef
+  \section{interests}
+    Data Processing,
+    Distributed Systems,
+    Functional Reactive Programming, \& Type Level Programming
 \end{aside}
 
 \section{experience}
 
 \begin{entrylist}
   \entryalt
-    {June 2013--Present}
+  {Mar 2017--Present}
+  {Lola}
+  {Boston, Massachusetts}
+  {Software Architect}
+  {Developed best practices, engineering processes, team lead for many
+    projects \\
+    Accomplishments:
+    \begin{itemize}
+    \item Gathered requirements for and led design and implementation
+      of trips product
+    \item Gathered requirements for and led design and implementation
+      of back office processing system
+    \item Led two engineers to improve the quality and accuracy of our
+      booking data (as reflected in airline PNRs) as well as reduce
+      the burden on our custom support team. We finished our project
+      on time, delivering several features ahead of schedule. These
+      included the ability to completly import an airline PNR into our
+      system and the ability to reflect changes on any part of a
+      booking
+    \item Closely mentored two junior engineers and provided suport to
+      many others, across teams
+    \item Standardized and socialized best practices for GraphQL API
+      design and implementation, including the usage of delayed
+      execution to improve performance
+    \item Centralized and automated deployment for most backend
+      services and coordinated with devops as their team grew to hand
+      over responsibility
+    \item Wrote a tool which performed black box performance testing
+      on a third party API. Analyzed the resulting data and made
+      recommendations which were used to improve our strategy for
+      maximizing flight search performance.
+    \item Centralized and automated deployment for most backend
+      services and coordinated with devops as their team grew to hand
+      over responsibility.
+    \item Centralized and automated database migrations across all
+      databases, eliminating problems previously caused by human error
+      and minimizing knowledge required to perform migrations
+      correctly.
+    \item Consulted with product on and advocated for future
+      performance and design improvements.
+    \item Quickly investigated and fixed backend bugs encountered by
+      the support team, eventually becoming the de facto "goto" person
+      for bugs and receiving recognition.
+    \item Advocated for, scheduled and coordinated team building
+      lunches to improve cohesion
+    \end{itemize}
+  }
+  \entryalt
+  {Mar 2015--Mar 2017}
+  {Localytics}
+  {Boston, Massachusetts}
+  {Senior Software Engineer}
+  {Full stack engineer focusing primarily on backend to develop and
+    maintain a realtime data ingestion system. \\
+    Accomplishments:
+    \begin{itemize}
+      \item Designed new datapoint validation and enrichment pipeline
+        with the goal of reducing faults and increasing
+        maintainability.
+      \item Led architectural design and implementation of improvements
+        to profiles product.
+      \item Automated post-fault recovery of several services,
+        significantly reducing late-night pages and engineering
+        burden.
+      \item Engaged in architectural discussions for other systems.
+      \item Led and helped teach guild for Functional Reactive
+        Programming and Type Level Programming.
+      \item As crew lead, led two other engineers in shipping
+        Re-marketing v1.
+      \item Mentored other developers in Scala and Ruby on Rails.
+      \item Collaborated with and assisted devops team with design and
+        architecture of permissions escalation/approval system which
+        helped reduce workload on devops and empowered engineers to take
+        devops work into their own hands.
+    \end{itemize}
+  }
+  \entryalt
+    {June 2013--Mar 2015}
     {PayPal}
     {Boston, Massachusetts}
     {Software Engineer II}
@@ -70,10 +137,27 @@
 
 \section{open source contributions}
 
+{\href{https://github.com/gilt/jerkson}{\textbf{jerkson}}} \hfill
+{\footnotesize\addfontfeature{Color=lightgray} Scala} \\
+Rewrote and re-added test suite to fork of Codahale's jerkson library,
+bumped version of jackson dependency, incorporated various bug fixes
+from disparate forks.
+
+{\href{https://github.com/seratch/AWScala}{\textbf{AWScala}}} \hfill
+{\footnotesize\addfontfeature{Color=lightgray} Scala} \\
+Added support for specifying credentials via \verb|ClientConfiguration|.
+
+{\href{https://github.com/ensime/ensime-emacs}{\textbf{ensime-emacs}}}
+\hfill{\footnotesize \addfontfeature{Color=lightgray} Lisp} \\
+Various contributions to improve the ENSIME (Enhanced Scala and java
+Interaction Mode for text Editors) integration for Emacs.
+
 {\href{https://github.com/jmpage/capistrano_scm_nexus}{\textbf{capistrano\_scm\_nexus}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
-Published a gem which allows Capistrano to deploy a release by downloading an artifact from Sonatype Nexus instead of using SCM.\\
+Published a gem which allows Capistrano to deploy a release by downloading an artifact from Sonatype Nexus instead of using SCM.
+
 {\href{https://github.com/newrelic/rpm}{\textbf{newrelic\_rpm}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
-Added Capistrano 3 support for deployment notification.\\
+Added Capistrano 3 support for deployment notification.
+
 {\href{https://github.com/thoughtbot/shoulda-matchers}{\textbf{shoulda-matchers}}} \hfill {\footnotesize\addfontfeature{Color=lightgray} Ruby Gem} \\
 Fixed a bug in the \verb|validates_numericality_of| matcher and added a \verb|validates_absence_of| matcher.
 
